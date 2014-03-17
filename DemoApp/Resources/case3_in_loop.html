@@ -1,0 +1,150 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=big5"/>
+    <title>Mem-Cache sample</title>
+</head>
+<body>
+<div class="csharpcode">
+  <pre class="alt"><span class="lnum">   1:  </span><span class="rem">// declare variable</span></pre>
+
+  <pre><span class="lnum">   2:  </span><span class="kwrd">int</span> a;</pre>
+
+  <pre class="alt"><span class="lnum">   3:  </span><span class="kwrd">string</span> s;</pre>
+
+  <pre><span class="lnum">   4:  </span>MyClassA o;</pre>
+
+  <pre class="alt"><span class="lnum">   5:  </span>&#160;</pre>
+
+  <pre><span class="lnum">   6:  </span><span class="kwrd">for</span> (<span class="kwrd">int</span> i = 1; i &lt;= 3; i++)</pre>
+
+  <pre class="alt"><span class="lnum">   7:  </span>{</pre>
+
+  <pre><span class="lnum">   8:  </span>    <span class="rem">// set value</span></pre>
+
+  <pre class="alt"><span class="lnum">   9:  </span>    a = 90 + i;</pre>
+
+  <pre><span class="lnum">  10:  </span>    s = <span class="str">&quot;我是字串&quot;</span> + i.ToString();</pre>
+
+  <pre class="alt"><span class="lnum">  11:  </span>    o = <span class="kwrd">new</span> MyClassA();</pre>
+
+  <pre><span class="lnum">  12:  </span>    o.s = <span class="str">&quot;ABCD&quot;</span> + i.ToString();</pre>
+
+  <pre class="alt"><span class="lnum">  13:  </span>    <span class="rem">// dump</span></pre>
+
+  <pre><span class="lnum">  14:  </span>    <span class="kwrd">this</span>.MyTrace(<span class="str">&quot;SET VALUE:&quot;</span>);</pre>
+
+  <pre class="alt"><span class="lnum">  15:  </span>    <span class="kwrd">this</span>.MyTrace(<span class="str">&quot;a = {0}&quot;</span>, a);</pre>
+
+  <pre><span class="lnum">  16:  </span>    <span class="kwrd">this</span>.MyTrace(<span class="str">&quot;s = {0}&quot;</span>, s);</pre>
+
+  <pre class="alt"><span class="lnum">  17:  </span>    o.Dump(txtMessage);</pre>
+
+  <pre><span class="lnum">  18:  </span>    <span class="kwrd">this</span>.MyTrace(<span class="str">&quot;-----------------------------&quot;</span>);</pre>
+
+  <pre class="alt"><span class="lnum">  19:  </span>&#160;</pre>
+
+  <pre><span class="lnum">  20:  </span>    <strong><font color="#0000ff">AspectW</font></strong>.Define</pre>
+
+  <pre class="alt"><span class="lnum">  21:  </span>        .Ignore()</pre>
+
+  <pre><span class="lnum">  22:  </span>        .Restore(<span class="kwrd">new</span> RestoreWhenFail(a, (v) =&gt; a = (<span class="kwrd">int</span>)v),</pre>
+
+  <pre class="alt"><span class="lnum">  23:  </span>                 <span class="kwrd">new</span> RestoreWhenFail(s, (v) =&gt; s = (<span class="kwrd">string</span>)v),</pre>
+
+  <pre><span class="lnum">  24:  </span>                 <span class="kwrd">new</span> RestoreWhenFail(o, (v) =&gt; o = (MyClassA)v))</pre>
+
+  <pre class="alt"><span class="lnum">  25:  </span>        .TraceException((ex) =&gt; <span class="kwrd">this</span>.MyTrace(ex.Message))</pre>
+
+  <pre><span class="lnum">  26:  </span>        .Do(() =&gt;</pre>
+
+  <pre class="alt"><span class="lnum">  27:  </span>        {</pre>
+
+  <pre><span class="lnum">  28:  </span>            <span class="rem">// change </span></pre>
+
+  <pre class="alt"><span class="lnum">  29:  </span>            a = -77;</pre>
+
+  <pre><span class="lnum">  30:  </span>            s = <span class="str">&quot;我改變了&quot;</span>;</pre>
+
+  <pre class="alt"><span class="lnum">  31:  </span>            o.a = 111;</pre>
+
+  <pre><span class="lnum">  32:  </span>            o.d = 5678.1234;</pre>
+
+  <pre class="alt"><span class="lnum">  33:  </span>            o.m = 123456789.123456789123456789M;</pre>
+
+  <pre><span class="lnum">  34:  </span>            o.s = <span class="str">&quot;我改變了ABCD&quot;</span>;</pre>
+
+  <pre class="alt"><span class="lnum">  35:  </span>            <span class="rem">// dump</span></pre>
+
+  <pre><span class="lnum">  36:  </span>            <span class="kwrd">this</span>.MyTrace(<span class="str">&quot;DO:&quot;</span>);</pre>
+
+  <pre class="alt"><span class="lnum">  37:  </span>            <span class="kwrd">this</span>.MyTrace(<span class="str">&quot;a = {0}&quot;</span>, a);</pre>
+
+  <pre><span class="lnum">  38:  </span>            <span class="kwrd">this</span>.MyTrace(<span class="str">&quot;s = {0}&quot;</span>, s);</pre>
+
+  <pre class="alt"><span class="lnum">  39:  </span>            o.Dump(txtMessage);</pre>
+
+  <pre><span class="lnum">  40:  </span>            <span class="kwrd">this</span>.MyTrace(<span class="str">&quot;-----------------------------&quot;</span>);</pre>
+
+  <pre class="alt"><span class="lnum">  41:  </span>&#160;</pre>
+
+  <pre><span class="lnum">  42:  </span>            <span class="rem">//## Make Fail.</span></pre>
+
+  <pre class="alt"><span class="lnum">  43:  </span>            <span class="kwrd">if</span>(i == 1 &amp;&amp; chkMakeFail1.Checked) </pre>
+
+  <pre><span class="lnum">  44:  </span>                <span class="kwrd">throw</span> <span class="kwrd">new</span> ApplicationException(<span class="str">&quot;\r\n&lt;&lt;FAIL c1&gt;&gt;\r\n&quot;</span>);</pre>
+
+  <pre class="alt"><span class="lnum">  45:  </span>            <span class="kwrd">else</span> <span class="kwrd">if</span> (i == 2 &amp;&amp; chkMakeFail2.Checked)</pre>
+
+  <pre><span class="lnum">  46:  </span>                <span class="kwrd">throw</span> <span class="kwrd">new</span> ApplicationException(<span class="str">&quot;\r\n&lt;&lt;FAIL c2&gt;&gt;\r\n&quot;</span>);</pre>
+
+  <pre class="alt"><span class="lnum">  47:  </span>            <span class="kwrd">else</span> <span class="kwrd">if</span> (i == 3 &amp;&amp; chkMakeFail3.Checked)</pre>
+
+  <pre><span class="lnum">  48:  </span>                <span class="kwrd">throw</span> <span class="kwrd">new</span> ApplicationException(<span class="str">&quot;\r\n&lt;&lt;FAIL c3&gt;&gt;\r\n&quot;</span>);</pre>
+
+  <pre class="alt"><span class="lnum">  49:  </span>        });</pre>
+
+  <pre><span class="lnum">  50:  </span>&#160;</pre>
+
+  <pre class="alt"><span class="lnum">  51:  </span>    <span class="rem">// dump</span></pre>
+
+  <pre><span class="lnum">  52:  </span>    <span class="kwrd">this</span>.MyTrace(<span class="str">&quot;FINAL:&quot;</span>);</pre>
+
+  <pre class="alt"><span class="lnum">  53:  </span>    <span class="kwrd">this</span>.MyTrace(<span class="str">&quot;a = {0}&quot;</span>, a);</pre>
+
+  <pre><span class="lnum">  54:  </span>    <span class="kwrd">this</span>.MyTrace(<span class="str">&quot;s = {0}&quot;</span>, s);</pre>
+
+  <pre class="alt"><span class="lnum">  55:  </span>    o.Dump(txtMessage);</pre>
+
+  <pre><span class="lnum">  56:  </span>    <span class="kwrd">this</span>.MyTrace(<span class="str">&quot;=============================\r\n&quot;</span>);</pre>
+
+  <pre class="alt"><span class="lnum">  57:  </span>}</pre>
+</div>
+<style type="text/css">
+
+.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }</style>
+
+</body>
+</html>

@@ -1,0 +1,488 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="txtMessage.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="panel1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cboException.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>180, 17</value>
+  </metadata>
+  <metadata name="label4.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="numErrorDepth.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="label3.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="label2.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="numErrorSeed.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="label1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="tabControl1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="tabPage1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="splitContainer1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="btnBasicRetryT.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="textBox1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="textBox1.Text" xml:space="preserve">
+    <value>try
+{
+    // OnEnter
+    this.Cursor = Cursors.WaitCursor; //@ UI control, mouse
+
+    int retryCount = 2;
+    for (; ; ) //@ for retry mechanism.
+    {
+        try
+        {
+            // before
+            this.MyTrace("BEGIN : Basic Retry");
+            // Biz-Login
+            _svc.SendMessage("John", "hello, long time no see.");
+            // after
+            this.MyTrace("END\r\n");
+            // success &amp; leave
+            break;
+        }
+        catch (Exception ex)
+        {
+            // exception tracing
+            this.MyTrace("CATCH : {0}", ex.Message);
+            //@ for retry mechanism.
+            if (retryCount-- &gt; 0)
+            {
+                Thread.Sleep(3000);
+                continue;
+            }
+            // fail &amp; leave
+            throw; 
+        }
+    }
+}
+finally
+{
+    // OnLeave
+    this.Cursor = Cursors.Default; //@ UI control, mouse
+}</value>
+  </data>
+  <metadata name="btnBasicRetry.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="textBox2.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="textBox2.Text" xml:space="preserve">
+    <value>AspectW.Define
+    .WaitCursor(this, btnBasicRetry)
+    .Retry(3000, 2)
+    .Trace(()=&gt; this.MyTrace("BEGIN : basic retry"),
+           ()=&gt; this.MyTrace("END\r\n"),
+           (ex)=&gt; this.MyTrace("CATCH : {0}", ex.Message))
+    .Do(()=&gt;
+    {
+        _svc.SendMessage("John", "hello, long time no see.");
+    });</value>
+  </data>
+  <metadata name="tabPage2.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="splitContainer3.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="btnParamRetryT.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="textBox3.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="textBox3.Text" xml:space="preserve">
+    <value>try
+{
+    // OnEnter
+    this.Cursor = Cursors.WaitCursor; //@ UI control, mouse
+    
+    // parameters for doing retry
+    string[] retryParamAry = new string[] { "HTTPS", "HTTP", "SMS" };
+    int retryParamIndex = 0;
+    string protocol = retryParamAry[retryParamIndex++];
+
+    for (; ; ) //@ for retry mechanism.
+    {
+        try
+        {
+            // before
+            this.MyTrace("BEGIN : Parameterized Retry");
+            // Biz-Login
+            _svc.SendMessage("John", "see you again.", protocol);
+            // after
+            this.MyTrace("END\r\n");
+            // success &amp; leave
+            break;
+        }
+        catch (Exception ex)
+        {
+            // exception tracing
+            this.MyTrace("CATCH : {0}", ex.Message);
+            //@ for retry mechanism.
+            if (retryParamIndex &lt; retryParamAry.Length)
+            {
+                Thread.Sleep(3000);
+                protocol = retryParamAry[retryParamIndex++];
+                continue; // retry
+            }
+            // fail &amp; leave
+            throw; 
+        }
+    }
+}
+finally
+{
+    // OnLeave
+    this.Cursor = Cursors.Default; //@ UI control, mouse
+}</value>
+  </data>
+  <metadata name="btnParamRetry.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="textBox4.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="textBox4.Text" xml:space="preserve">
+    <value>string protocol = "HTTPS";
+AspectW.Define
+    .WaitCursor(this, btnParamRetry)
+    .RetryParam(3000,
+          ()=&gt; protocol="HTTP", 
+          ()=&gt; protocol="SMS")
+    .Trace(()=&gt; this.MyTrace("BEGIN : parameterized retry"),
+           ()=&gt; this.MyTrace("END\r\n"),
+           (ex)=&gt; this.MyTrace("CATCH : {0}", ex.Message))
+    .Do(()=&gt;
+    {
+        _svc.SendMessage("John", "see you again.", protocol);
+    });</value>
+  </data>
+  <metadata name="tabPage3.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="splitContainer4.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="btnMultiExRetryT.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="textBox5.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="textBox5.Text" xml:space="preserve">
+    <value>try
+{
+    ReadData();
+}
+catch(IOException e)
+{
+    Thread.Sleep(3000);
+    retry 2;
+}
+fail 
+{
+    Console.Writeline("network failure");
+}
+catch(DataException e)
+{
+    RefreshData();
+    retry 10;
+}</value>
+  </data>
+  <metadata name="btnMultiExRetry.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="textBox6.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="textBox6.Text" xml:space="preserve">
+    <value>AspectW.Define
+    .WaitCursor(this, btnMultiExRetry)
+    .Retry&lt;DataException&gt;(0, 10, (ex)=&gt; _svc.RefreshData())
+    .Retry&lt;IOException&gt;(3000, 2, 
+           null, // recovery action
+           (ex)=&gt; txtMessage.AppendText("network failure!\r\n"))
+    .Do(()=&gt;
+    {
+        _svc.ReadData();
+    });</value>
+  </data>
+  <metadata name="tabPage4.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="splitContainer5.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="textBox7.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="textBox7.Text" xml:space="preserve">
+    <value>List&lt;Message&gt; getStatusUpdate(Person person, TimeSpan staleness)
+{
+  List&lt;Message&gt; result = new List&lt;Message&gt;();
+  Set&lt;Person&gt; f = friends.Get(person, staleness);
+  foreach (Person p in f)
+  {
+    try {
+      result.Add(statusUpdates.Get(p, staleness));
+    } 
+    catch(StalenessException ex)
+    { 
+      ; 
+    } 	
+  }
+  return result;
+}</value>
+  </data>
+  <metadata name="btnSkipFault.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="textBox8.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="textBox8.Text" xml:space="preserve">
+    <value>public List&lt;AMessage&gt; GetStatusUpdate(string name)
+{
+  List&lt;AMessage&gt; result = new List&lt;AMessage&gt;();
+  Person[] f = friends.Get(name);
+  foreach (Person p in f)
+  {
+    AspectW.Define
+      .Ignore&lt;IOException&gt;()
+      .Do(()=&gt; 
+        result.Add(statusUpdates.Get(p))
+        );
+  }
+  return result;
+}</value>
+  </data>
+  <metadata name="tabPage5.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="splitContainer6.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="textBox9.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="textBox9.Text" xml:space="preserve">
+    <value>void SendEventInvite(
+  Person me,
+  AddressFilter&lt;string,bool&gt; isValid,
+  string message,
+  TimeStamp staleness)
+{
+  foreach(Person friend in friends.Get(me, staleness))
+  {
+    try {
+      string address = friend.Get("address", staleness);
+      if(isValid (friend))
+      {
+        string protocol = "HTTPS";
+        try(protocol) {
+          sendMessage(friend, message, protocol);
+        } catch(AvailablityException ex) {
+          Thread.Sleep(3000);
+          retry(protocol="HTTP");
+        }
+      }
+    } catch(StaleDataException ex, 5){
+      Thread.Sleep(3000);
+      friend.Refresh("address");
+    } fail {
+      Console.WriteLine("5 retries failed");
+    } finally {
+      Console.WriteLine("Done");
+    }
+  }
+}</value>
+  </data>
+  <metadata name="btnComposite.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="textBox10.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="textBox10.Text" xml:space="preserve">
+    <value>public void SendEventInvite(
+  Person me, 
+  Func&lt;string, bool&gt; isValid, 
+  string message)
+{
+  foreach(Person friend in friends.Get(me))
+  {
+    AspectW.Define
+      .OnLeave(() =&gt; _logger.WriteLine("Done"))
+      .Retry&lt;DataException&gt;(3000, 5,
+        (ex)=&gt; RefreshAddress(friend), // recovery action
+        (ex)=&gt;_logger.WriteLine("5 retries failed")) // fail action
+      .Do(()=&gt;
+      {
+        string address = friend.GetAddress();
+        string protocol = "HTTPS";
+        AspectW.Define
+          .WhenTrue(isValid(address))
+          .RetryParam&lt;ApplicationException&gt;(3000, ()=&gt; protocol="HTTP" )
+          .Do(()=&gt; 
+            SendMessage(friend, message, protocol)
+          );
+      });
+  }
+}</value>
+  </data>
+  <metadata name="splitContainer2.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>67</value>
+  </metadata>
+</root>

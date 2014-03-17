@@ -1,0 +1,5 @@
+D:\MyLab\conApp_StructLab\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\MyLab\conApp_StructLab\bin\Debug\conApp_StructLab.exe
+D:\MyLab\conApp_StructLab\bin\Debug\conApp_StructLab.pdb
+D:\MyLab\conApp_StructLab\obj\x86\Debug\conApp_StructLab.exe
+D:\MyLab\conApp_StructLab\obj\x86\Debug\conApp_StructLab.pdb
