@@ -1,0 +1,15 @@
+D:\MyLab\AspectW\bin\Release\AspectW.dll
+D:\MyLab\AspectW\bin\Release\AspectW.pdb
+D:\MyLab\AspectW\obj\Release\ResolveAssemblyReference.cache
+D:\MyLab\AspectW\obj\Release\AspectW.dll
+D:\MyLab\AspectW\obj\Release\AspectW.pdb
+D:\MyLab\AspectW\AspectW\bin\Release\AspectW.dll
+D:\MyLab\AspectW\AspectW\bin\Release\AspectW.pdb
+D:\MyLab\AspectW\AspectW\obj\Release\ResolveAssemblyReference.cache
+D:\MyLab\AspectW\AspectW\obj\Release\AspectW.dll
+D:\MyLab\AspectW\AspectW\obj\Release\AspectW.pdb
+F:\AspectW\AspectW\bin\Release\AspectW.dll
+F:\AspectW\AspectW\bin\Release\AspectW.pdb
+F:\AspectW\AspectW\obj\Release\ResolveAssemblyReference.cache
+F:\AspectW\AspectW\obj\Release\AspectW.dll
+F:\AspectW\AspectW\obj\Release\AspectW.pdb

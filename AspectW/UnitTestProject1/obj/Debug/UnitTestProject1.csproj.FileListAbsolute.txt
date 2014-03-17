@@ -1,0 +1,14 @@
+D:\MyLab\AspectW\AspectW\UnitTestProject1\bin\Debug\UnitTestProject1.dll
+D:\MyLab\AspectW\AspectW\UnitTestProject1\bin\Debug\UnitTestProject1.pdb
+D:\MyLab\AspectW\AspectW\UnitTestProject1\bin\Debug\AspectW.dll
+D:\MyLab\AspectW\AspectW\UnitTestProject1\bin\Debug\AspectW.pdb
+D:\MyLab\AspectW\AspectW\UnitTestProject1\obj\Debug\ResolveAssemblyReference.cache
+D:\MyLab\AspectW\AspectW\UnitTestProject1\obj\Debug\UnitTestProject1.dll
+D:\MyLab\AspectW\AspectW\UnitTestProject1\obj\Debug\UnitTestProject1.pdb
+F:\AspectW\AspectW\UnitTestProject1\bin\Debug\UnitTestProject1.dll
+F:\AspectW\AspectW\UnitTestProject1\bin\Debug\UnitTestProject1.pdb
+F:\AspectW\AspectW\UnitTestProject1\bin\Debug\AspectW.dll
+F:\AspectW\AspectW\UnitTestProject1\bin\Debug\AspectW.pdb
+F:\AspectW\AspectW\UnitTestProject1\obj\Debug\ResolveAssemblyReference.cache
+F:\AspectW\AspectW\UnitTestProject1\obj\Debug\UnitTestProject1.dll
+F:\AspectW\AspectW\UnitTestProject1\obj\Debug\UnitTestProject1.pdb

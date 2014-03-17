@@ -1,0 +1,14 @@
+D:\MyLab\AspectW\AspectW\UnitTestProject1\bin\Release\UnitTestProject1.dll
+D:\MyLab\AspectW\AspectW\UnitTestProject1\bin\Release\UnitTestProject1.pdb
+D:\MyLab\AspectW\AspectW\UnitTestProject1\bin\Release\AspectW.dll
+D:\MyLab\AspectW\AspectW\UnitTestProject1\bin\Release\AspectW.pdb
+D:\MyLab\AspectW\AspectW\UnitTestProject1\obj\Release\ResolveAssemblyReference.cache
+D:\MyLab\AspectW\AspectW\UnitTestProject1\obj\Release\UnitTestProject1.dll
+D:\MyLab\AspectW\AspectW\UnitTestProject1\obj\Release\UnitTestProject1.pdb
+F:\AspectW\AspectW\UnitTestProject1\bin\Release\UnitTestProject1.dll
+F:\AspectW\AspectW\UnitTestProject1\bin\Release\UnitTestProject1.pdb
+F:\AspectW\AspectW\UnitTestProject1\bin\Release\AspectW.dll
+F:\AspectW\AspectW\UnitTestProject1\bin\Release\AspectW.pdb
+F:\AspectW\AspectW\UnitTestProject1\obj\Release\ResolveAssemblyReference.cache
+F:\AspectW\AspectW\UnitTestProject1\obj\Release\UnitTestProject1.dll
+F:\AspectW\AspectW\UnitTestProject1\obj\Release\UnitTestProject1.pdb
