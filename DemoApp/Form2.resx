@@ -318,22 +318,76 @@ AspectW.Define
   <data name="textBox5.Text" xml:space="preserve">
     <value>try
 {
-    ReadData();
+    try
+    {
+        // OnEnter
+        this.Cursor = Cursors.WaitCursor; //@ UI control, mouse
+        btnMultiExRetryT.Enabled = false;
+
+        int retryCount1 = 2;
+        int retryCount2 = 10;
+        for (; ; ) //@ for retry mechanism.
+        {
+            try
+            {
+                // before
+                this.MyTrace("BEGIN : Recovery From Multiple Exception");
+                // Biz-Logic
+                _svc.ReadData();
+                // after
+                this.MyTrace("END\r\n");
+                // success &amp; leave
+                break;
+            }
+            catch (IOException ex)
+            {
+                // exception tracing
+                this.MyTrace("CATCH : {0}", ex.Message);
+
+                //@ for retry mechanism.
+                if (retryCount1-- &gt; 0)
+                {
+                    Thread.Sleep(3000);
+                    continue; // retry
+                }
+                else
+                {
+                    // Handle Fail!
+                    txtMessage.AppendText("network failure!\r\n");
+                    throw; // fail &amp; leave
+                }
+            }
+            catch (DataException ex)
+            {
+                // exception tracing
+                this.MyTrace("CATCH : {0}", ex.Message);
+
+                //@ for retry mechanism.
+                if(retryCount2-- &gt; 0)
+                {
+                    // recovery action
+                    _svc.RefreshData();                  
+                    continue; // retry
+                }
+                else // fail!
+                {
+                    throw; // fail &amp; leave
+                }
+            }
+        }
+    }
+    finally
+    {
+        // OnLeave
+        this.Cursor = Cursors.Default; //@ UI control, mouse
+        btnMultiExRetryT.Enabled = false;
+    }
 }
-catch(IOException e)
+catch (Exception ex)
 {
-    Thread.Sleep(3000);
-    retry 2;
+    txtMessage.AppendText(string.Format("&lt;&lt;OUTSIDE CATCH&gt;&gt; {0}\r\n\r\n", ex.Message));
 }
-fail 
-{
-    Console.Writeline("network failure");
-}
-catch(DataException e)
-{
-    RefreshData();
-    retry 10;
-}</value>
+</value>
   </data>
   <metadata name="btnMultiExRetry.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

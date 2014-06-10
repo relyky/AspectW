@@ -56,6 +56,7 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.splitContainer4 = new System.Windows.Forms.SplitContainer();
+            this.btnMultiExRetryT = new System.Windows.Forms.Button();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.btnMultiExRetry = new System.Windows.Forms.Button();
             this.textBox6 = new System.Windows.Forms.TextBox();
@@ -71,7 +72,6 @@
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
-            this.btnMultiExRetryT = new System.Windows.Forms.Button();
             this.contextMenuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numErrorDepth)).BeginInit();
@@ -343,9 +343,9 @@
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.splitContainer3);
-            this.tabPage2.Location = new System.Drawing.Point(4, 26);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Size = new System.Drawing.Size(1067, 284);
+            this.tabPage2.Size = new System.Drawing.Size(1067, 288);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Parameterized Retry";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -450,6 +450,18 @@
             this.splitContainer4.SplitterDistance = 489;
             this.splitContainer4.TabIndex = 2;
             // 
+            // btnMultiExRetryT
+            // 
+            this.btnMultiExRetryT.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMultiExRetryT.Location = new System.Drawing.Point(332, 249);
+            this.btnMultiExRetryT.Margin = new System.Windows.Forms.Padding(4);
+            this.btnMultiExRetryT.Name = "btnMultiExRetryT";
+            this.btnMultiExRetryT.Size = new System.Drawing.Size(127, 31);
+            this.btnMultiExRetryT.TabIndex = 2;
+            this.btnMultiExRetryT.Text = "Multi-Ex Retry T";
+            this.btnMultiExRetryT.UseVisualStyleBackColor = true;
+            this.btnMultiExRetryT.Click += new System.EventHandler(this.btnMultiExRetryT_Click);
+            // 
             // textBox5
             // 
             this.textBox5.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -493,9 +505,9 @@
             // tabPage4
             // 
             this.tabPage4.Controls.Add(this.splitContainer5);
-            this.tabPage4.Location = new System.Drawing.Point(4, 26);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(1067, 284);
+            this.tabPage4.Size = new System.Drawing.Size(1067, 288);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Skip Some Fault In Loop";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -561,9 +573,9 @@
             // tabPage5
             // 
             this.tabPage5.Controls.Add(this.splitContainer6);
-            this.tabPage5.Location = new System.Drawing.Point(4, 26);
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(1067, 284);
+            this.tabPage5.Size = new System.Drawing.Size(1067, 288);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Composite Case";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -643,18 +655,6 @@
             this.splitContainer2.Size = new System.Drawing.Size(1075, 603);
             this.splitContainer2.SplitterDistance = 314;
             this.splitContainer2.TabIndex = 8;
-            // 
-            // btnMultiExRetryT
-            // 
-            this.btnMultiExRetryT.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMultiExRetryT.Location = new System.Drawing.Point(332, 249);
-            this.btnMultiExRetryT.Margin = new System.Windows.Forms.Padding(4);
-            this.btnMultiExRetryT.Name = "btnMultiExRetryT";
-            this.btnMultiExRetryT.Size = new System.Drawing.Size(127, 31);
-            this.btnMultiExRetryT.TabIndex = 2;
-            this.btnMultiExRetryT.Text = "Multi-Ex Retry T";
-            this.btnMultiExRetryT.UseVisualStyleBackColor = true;
-            this.btnMultiExRetryT.Click += new System.EventHandler(this.btnMultiExRetryT_Click);
             // 
             // Form2
             // 
