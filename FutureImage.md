@@ -1,5 +1,5 @@
 # 未來語法想像
-## 語法結構
+## 交織(wave)語法結構
 提供新關鍵字[wave]做程式碼交織。語去靈感來自"using"關鍵字。
     
 	wave(Aspect,[params],[lamda])	
