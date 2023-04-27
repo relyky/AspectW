@@ -1,4 +1,6 @@
 # 未來語法想像
+參考：[AOP 未來想像 on 2023/4/28](https://rely-ky.gitbook.io/gitbook/aop-wei-lai-xiang-xiang-on-2023428)
+
 ## 交織(wave)語法結構
 提供新關鍵字[wave]做程式碼交織。語去靈感來自"using"關鍵字。
     
